@@ -1,17 +1,17 @@
 import java.util.List;
 
 public class ProcessadorBoleto {
-	double somaBoleto;
+	double totalBoleto;
 
 
 	public boolean processa(Fatura fatura, List<Boleto> listBoleto) {
 		
 		for (Boleto boleto : listBoleto) {
-			somaBoleto = somaBoleto + boleto.getValorPago();
+			totalBoleto = totalBoleto + boleto.getValorPago();
 		}
 		
 		
-		if (fatura.getValorTotal() < somaBoleto) {
+		if (fatura.getValorTotal() < totalBoleto) {
 			return true;
 		}
 		else
