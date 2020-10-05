@@ -12,19 +12,19 @@ public class ProcessadorBoletosTest {
 		ProcessadorBoleto p = new ProcessadorBoleto();
 		
 		Fatura f = new Fatura();
-		f.setCliente("Leticia");
-		f.setData("03/10/2020");
-		f.setValorTotal(700.00);
+		f.setCliente("Pokemon");
+		f.setData("30/09/2020");
+		f.setValorTotal(500.00);
 		
 		Boleto b1 = new Boleto();
-		b1.setData("04/10/2020");
-		b1.setCodigo("0001");
-		b1.setValorPago(400.00);
+		b1.setData("02/10/2020");
+		b1.setCodigo("0000001");
+		b1.setValorPago(300.00);
 		
 		Boleto b2 = new Boleto();
-		b2.setData("05/10/2020");
-		b2.setCodigo("0002");
-		b2.setValorPago(300.00);
+		b2.setData("04/10/2020");
+		b2.setCodigo("0000002");
+		b2.setValorPago(200.00);
 		
 		List<Boleto> listaBoleto = new ArrayList<>();
 		listaBoleto.add(b1);
@@ -42,19 +42,19 @@ public class ProcessadorBoletosTest {
 		ProcessadorBoleto p = new ProcessadorBoleto();
 		
 		Fatura f = new Fatura();
-		f.setCliente("Fernanda");
+		f.setCliente("Digimon");
 		f.setData("30/09/2020");
-		f.setValorTotal(400.00);
+		f.setValorTotal(500.00);
 		
 		Boleto b1 = new Boleto();
-		b1.setData("06/10/2020");
-		b1.setCodigo("0003");
-		b1.setValorPago(500.00);
+		b1.setData("05/10/2020");
+		b1.setCodigo("0000003");
+		b1.setValorPago(400.00);
 		
 		Boleto b2 = new Boleto();
-		b2.setData("07/10/2020");
-		b2.setCodigo("004");
-		b2.setValorPago(1000.00);
+		b2.setData("05/10/2020");
+		b2.setCodigo("0000004");
+		b2.setValorPago(200.00);
 		
 		List<Boleto> listaBoleto = new ArrayList<>();
 		listaBoleto.add(b1);
